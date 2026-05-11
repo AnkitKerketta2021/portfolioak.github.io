@@ -255,6 +255,23 @@ img {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* *==================== Read More/Less ==================== */
+#moreText{
+    display: none;
+}
+
+.read_more_btn{
+    color: #6c63ff;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read_more_btn:hover{
+    text-decoration: underline;
+}
+
 /* *==================== HOME ==================== */
 .home_container {
     gap: 1rem;
@@ -930,7 +947,7 @@ img {
 /* *========== For Medium Devices ========== */
 @media screen and (min-width: 425px) {
     .home_content {
-        grid-template-columns: max-content 1fr 1fr;
+        grid-template-columns: max-content 350px 1fr 1fr;
     }
 
     .home_data {

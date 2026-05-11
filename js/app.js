@@ -9,6 +9,22 @@ if (navToggle) {
     navMenu.classList.toggle("show-menu");
   });
 }
+
+//*  ====================  READ More/Less ====================
+function toggleText() {
+
+    const moreText = document.getElementById("moreText");
+    const btn = document.getElementById("readBtn");
+
+    if (moreText.style.display === "inline") {
+        moreText.style.display = "none";
+        btn.innerHTML = "Read More";
+    } else {
+        moreText.style.display = "inline";
+        btn.innerHTML = "Read Less";
+    }
+}
+
 //*  ====================  MENU HIDE ====================
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -207,6 +223,7 @@ revealOnScroll.reveal(".home_subtitle", { delay: 400 });
 revealOnScroll.reveal(".home_decription", { delay: 300 });
 revealOnScroll.reveal(".home_social-icon", { delay: 300 });
 revealOnScroll.reveal(".contact_button", { delay: 200 });
+revealOnScroll.reveal(".read_more_btn", { delay: 200 });
 
 // * ========== About ==========
 revealOnScroll.reveal(".about_container", { delay: 200 });
